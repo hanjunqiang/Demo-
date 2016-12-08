@@ -1,0 +1,144 @@
+//
+//  XWSettingController.m
+//  SixNews
+//
+//  Created by 祁 on 15/11/30.
+//  Copyright © 2015年 张声扬. All rights reserved.
+//
+
+#import "XWSettingController.h"
+#import "XWSettingViewCell.h"
+#import "XWCellItem.h"
+#import "XWArrowItem.h"
+#import "XWLabelItem.h"
+#import "XWSwitchItem.h"
+//#import "XWLoginController.h"
+#import "XWSettingGroupModel.h"
+#import "XWDownloadController.h"
+#import "XWNewsPushController.h"
+#import "XWFeedBackController.h"
+#import "XWBosItem.h"
+#import "XWAboutController.h"
+
+@interface XWSettingController ()
+
+@end
+
+@implementation XWSettingController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    //1.加载设置的数据
+    [self setupSettingData];
+    //2.设置导航栏上面的按钮
+    [self setupNavRight];
+
+}
+
+#pragma mark 加载设置的数据
+-(void)setupSettingData
+{
+    
+    //1.第一组
+    
+//    XWCellItem *account=[XWArrowItem itemWithIcon:@"settings_account_ico" title:@"账号管理" vcClass:[XWLoginController class] dismissType:@"login" ];
+//    
+//    XWCellItem *interst=[XWArrowItem itemWithIcon:@"settings_status_ico" title:@"选择兴趣" vcClass:[XWLoginController class] dismissType:@"login" ];
+    
+    XWSettingGroupModel *group1=[[XWSettingGroupModel alloc]init];
+//    group1.items=@[account,interst];
+    [self.datas addObject:group1];
+    //2.第二组
+    XWCellItem *download=[XWArrowItem itemWithIcon:@"settings_download_ico" title:@"离线下载" vcClass:[XWDownloadController class] dismissType:nil];
+    XWSettingGroupModel *group2=[[XWSettingGroupModel alloc]init];
+    group2.items=@[download];
+    [self.datas addObject:group2];
+    //3.第三组
+    XWCellItem *close=[XWSwitchItem itemWithIcon:@"settings_double_push_ico" title:@"双击关闭文章"];
+    XWCellItem *slide=[XWSwitchItem itemWithIcon:@"settings_slipping_ico" title:@"文章左右滑动"];
+    XWCellItem *screen=[XWSwitchItem itemWithIcon:@"settings_full_ico" title:@"正文全屏浏览"];
+    XWCellItem *replyAlert=[XWSwitchItem itemWithIcon:@"settings_nopoint_ico" title:@"开启新回复提示"];
+    
+    XWSettingGroupModel *group3=[[XWSettingGroupModel alloc]init];
+    
+    group3.items=@[close,slide,screen,replyAlert ];
+    [self.datas addObject:group3];
+    //4.第四组
+    XWCellItem *push=[XWArrowItem itemWithIcon:@"settings_news_push_ico" title:@"要闻推送" vcClass:[XWNewsPushController class] dismissType:nil];
+    XWSettingGroupModel *group4=[[XWSettingGroupModel alloc]init];
+    group4.items=@[push];
+    [self.datas addObject:group4];
+    //5.第五组
+    XWCellItem *clear=[XWLabelItem itemWithIcon:@"settings_Empty_Cache_ico" title:@"立即清除缓存" cacheSize:@"23.5M"];
+    XWSettingGroupModel *group5=[[XWSettingGroupModel alloc]init];
+    group5.items=@[clear];
+    [self.datas addObject:group5];
+    //清空缓存
+    __weak typeof(self)selfVC=self;
+    clear.option=^{
+        //发送通知
+        NSNotification *note=[[NSNotification alloc]initWithName:clearDataName object:nil userInfo:nil];
+        [XWNotification postNotification:note];
+        [selfVC clearData];
+    };
+    //6.第六组
+    XWCellItem *feedback=[XWArrowItem itemWithIcon:@"settings_feedback_ico" title:@"意见反馈" vcClass:[XWFeedBackController class] dismissType:@"comment"];
+    XWCellItem *like=[XWArrowItem itemWithIcon:@"settings_like_ico" title:@"喜欢，就来评分吧" vcClass:nil dismissType:nil];
+    XWCellItem *about=[XWArrowItem itemWithIcon:@"settings_about_ico" title:@"关于" vcClass:[XWAboutController class] dismissType:nil] ;
+    XWSettingGroupModel *group6=[[XWSettingGroupModel alloc]init];
+    group6.items=@[feedback,like,about];
+    [self.datas addObject:group6];
+}
+
+
+#pragma mark 添加退出当前页的按钮
+-(void)setupNavRight
+{
+    self.title=@"设置";
+    //添加右边的导航栏的按钮
+    UIBarButtonItem *rightItem=[UIBarButtonItem itemWithRightIcon:@"search_close_btn" highIcon:nil target:self action:@selector(quit)];
+    self.navigationItem.rightBarButtonItem=rightItem;
+    //添加左边导航栏的按钮
+    UIBarButtonItem *leftItem= [UIBarButtonItem  itemWithWithLeftIocn:@"weather_back" highIcon:nil edgeInsets:UIEdgeInsetsMake(0, -13, 0, 13) target:self action:@selector(quit)];
+    self.navigationItem.leftBarButtonItem=leftItem;
+}
+
+#pragma mark 显示清楚缓存的提示按钮
+-(void)clearData
+{
+    __block UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(0, 24, self.view.width, 40)];
+    btn.titleLabel.font=[UIFont systemFontOfSize:15];
+    [btn setBackgroundColor:XWColorRGBA(0, 0, 0, 0.3)];
+    btn.alpha=0.2;
+    [btn setTitle:@"缓存清理成功!" forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:@"cold_loading_selected_new"] forState:UIControlStateNormal];
+    
+    [self.navigationController.view insertSubview:btn aboveSubview:self.navigationController.navigationBar];
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        btn.alpha=1;
+        btn.transform=CGAffineTransformMakeTranslation(0, 40);
+    } completion:^(BOOL finished) {
+        //停止一秒 在执行动画
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:0.25 animations:^{
+                btn.transform=CGAffineTransformIdentity;
+                btn.alpha=0.2;
+            } completion:^(BOOL finished) {
+                [btn removeFromSuperview];
+            }];
+        });
+        
+        
+        
+    }];
+}
+
+
+-(void)quit
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+@end

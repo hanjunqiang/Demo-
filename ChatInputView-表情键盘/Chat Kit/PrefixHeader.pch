@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  Chat Kit
+//
+//  Created by LeungChaos on 16/9/1.
+//  Copyright © 2016年 liang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry.h>
+
+#define SCREEN [UIScreen mainScreen].bounds.size
+
+#define IPHONE4S ((SCREEN.height == 480.0f)?YES:NO)
+#define IPHONE5 ((SCREEN.height == 568.0f)?YES:NO)
+#define IPHONE6 ((SCREEN.height == 667.0f)?YES:NO)
+#define IPHONE6P ((SCREEN.height == 736.0f)?YES:NO)
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUx-ua-PvU">
+                                <rect key="frame" x="0.0" y="86" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LhL-yd-erQ"/>
+                                </constraints>
+                                <state key="normal" title="成功">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="success:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sZF-c8-k7f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4R-22-6I7">
+                                <rect key="frame" x="0.0" y="187" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3R8-7V-1vV"/>
+                                </constraints>
+                                <state key="normal" title="失败">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3R8-7V-1vV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="failure:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nyl-bM-jxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-9F-Ado">
+                                <rect key="frame" x="0.0" y="288" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VzP-eA-WNn"/>
+                                </constraints>
+                                <state key="normal" title="加载中">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VzP-eA-WNn"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="loadClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8KD-Z5-KQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb4-W0-0Sm">
+                                <rect key="frame" x="0.0" y="389" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AFc-G5-CgD"/>
+                                </constraints>
+                                <state key="normal" title="隐藏">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AFc-G5-CgD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="hide:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DQJ-gk-40t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x25-wp-iMk">
+                                <rect key="frame" x="0.0" y="490" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gcb-tl-vIQ"/>
+                                </constraints>
+                                <state key="normal" title="文字">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gcb-tl-vIQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="text:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6rU-IS-PPY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pb4-W0-0Sm" firstAttribute="top" secondItem="3I8-9F-Ado" secondAttribute="bottom" constant="1" id="2US-z2-I3I"/>
+                            <constraint firstItem="a4R-22-6I7" firstAttribute="top" secondItem="xUx-ua-PvU" secondAttribute="bottom" constant="1" id="6lR-b5-rcw"/>
+                            <constraint firstAttribute="trailing" secondItem="a4R-22-6I7" secondAttribute="trailing" id="IS3-RG-0Qc"/>
+                            <constraint firstAttribute="trailing" secondItem="pb4-W0-0Sm" secondAttribute="trailing" id="K2w-DG-Xdv"/>
+                            <constraint firstItem="3I8-9F-Ado" firstAttribute="top" secondItem="a4R-22-6I7" secondAttribute="bottom" constant="1" id="Lz8-dg-XW1"/>
+                            <constraint firstItem="a4R-22-6I7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="NAW-bv-F6y"/>
+                            <constraint firstItem="pb4-W0-0Sm" firstAttribute="height" secondItem="xUx-ua-PvU" secondAttribute="height" id="Ot2-yF-RNt"/>
+                            <constraint firstItem="xUx-ua-PvU" firstAttribute="height" secondItem="x25-wp-iMk" secondAttribute="height" id="Pqa-6b-GZt"/>
+                            <constraint firstItem="pb4-W0-0Sm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Pvh-HN-z2C"/>
+                            <constraint firstItem="xUx-ua-PvU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Rd4-dD-ze8"/>
+                            <constraint firstAttribute="trailing" secondItem="3I8-9F-Ado" secondAttribute="trailing" id="ZHY-Qm-cJb"/>
+                            <constraint firstItem="xUx-ua-PvU" firstAttribute="height" secondItem="a4R-22-6I7" secondAttribute="height" id="bUb-1c-Pv0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="x25-wp-iMk" secondAttribute="bottom" constant="10" id="gPl-Km-LpW"/>
+                            <constraint firstItem="xUx-ua-PvU" firstAttribute="height" secondItem="3I8-9F-Ado" secondAttribute="height" id="lNh-GW-tke"/>
+                            <constraint firstAttribute="trailing" secondItem="xUx-ua-PvU" secondAttribute="trailing" id="sas-j0-ud2"/>
+                            <constraint firstAttribute="trailing" secondItem="x25-wp-iMk" secondAttribute="trailing" id="tBu-63-D8E"/>
+                            <constraint firstItem="3I8-9F-Ado" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="wWC-CV-jHp"/>
+                            <constraint firstItem="x25-wp-iMk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="wvN-D9-0nr"/>
+                            <constraint firstItem="x25-wp-iMk" firstAttribute="top" secondItem="pb4-W0-0Sm" secondAttribute="bottom" constant="1" id="x7n-nk-SZG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UjY-xz-CyP" customClass="RFChatEmojiView">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-mm-RSf">
+                    <rect key="frame" x="0.0" y="101" width="390" height="33"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkt-aq-NCP">
+                            <rect key="frame" x="345" y="0.0" width="45" height="33"/>
+                            <color key="backgroundColor" red="1" green="0.98918049070000003" blue="0.99612898120000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="c7u-3i-MTl"/>
+                            </constraints>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" red="0.2470588235" green="0.25098039220000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendClick:" destination="UjY-xz-CyP" eventType="touchUpInside" id="Wyc-Dm-aBI"/>
+                            </connections>
+                        </button>
+                        <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkc-R4-kLI">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="1"/>
+                            <color key="backgroundColor" red="0.72251602564102568" green="0.72251602564102568" blue="0.72251602564102568" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="goG-nP-JpF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.98918049073575398" blue="0.99612898118130999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="nkc-R4-kLI" firstAttribute="top" secondItem="rKq-mm-RSf" secondAttribute="top" id="78X-Sa-BR2"/>
+                        <constraint firstAttribute="bottom" secondItem="kkt-aq-NCP" secondAttribute="bottom" id="BXv-Tf-4Ii"/>
+                        <constraint firstItem="kkt-aq-NCP" firstAttribute="top" secondItem="rKq-mm-RSf" secondAttribute="top" id="LBF-U3-947"/>
+                        <constraint firstAttribute="trailing" secondItem="kkt-aq-NCP" secondAttribute="trailing" id="OWu-IT-POO"/>
+                        <constraint firstAttribute="trailing" secondItem="nkc-R4-kLI" secondAttribute="trailing" id="Xfn-Lr-5Gm"/>
+                        <constraint firstAttribute="height" constant="33" id="g40-tM-Aq6"/>
+                        <constraint firstItem="nkc-R4-kLI" firstAttribute="leading" secondItem="rKq-mm-RSf" secondAttribute="leading" id="oDl-HJ-xXJ"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JMO-fk-3jW">
+                    <rect key="frame" x="0.0" y="1" width="390" height="75"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zh4-CF-Mqa" customClass="RFEmojiLayout">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZc-Em-e9I" userLabel="Seperator">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="1"/>
+                    <color key="backgroundColor" red="0.72095352564102566" green="0.71718062467804577" blue="0.69929256897490211" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="o3l-2d-Qwo"/>
+                    </constraints>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="l1w-wj-Lb1">
+                    <rect key="frame" x="0.0" y="76" width="390" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="xEC-IX-mQf"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JMO-fk-3jW" firstAttribute="top" secondItem="qZc-Em-e9I" secondAttribute="bottom" id="6LM-Bg-IZG"/>
+                <constraint firstItem="rKq-mm-RSf" firstAttribute="leading" secondItem="UjY-xz-CyP" secondAttribute="leading" id="7l8-yM-psm"/>
+                <constraint firstItem="qZc-Em-e9I" firstAttribute="top" secondItem="UjY-xz-CyP" secondAttribute="top" id="AgW-md-q2B"/>
+                <constraint firstItem="l1w-wj-Lb1" firstAttribute="top" secondItem="JMO-fk-3jW" secondAttribute="bottom" id="AmR-Z4-BfJ"/>
+                <constraint firstItem="rKq-mm-RSf" firstAttribute="top" secondItem="l1w-wj-Lb1" secondAttribute="bottom" id="BEg-u2-dkx"/>
+                <constraint firstItem="JMO-fk-3jW" firstAttribute="centerX" secondItem="UjY-xz-CyP" secondAttribute="centerX" id="FWc-jQ-9Ye"/>
+                <constraint firstAttribute="trailing" secondItem="JMO-fk-3jW" secondAttribute="trailing" id="GdA-Nr-KVW"/>
+                <constraint firstAttribute="bottom" secondItem="rKq-mm-RSf" secondAttribute="bottom" id="W9t-Jh-UUv"/>
+                <constraint firstItem="qZc-Em-e9I" firstAttribute="leading" secondItem="UjY-xz-CyP" secondAttribute="leading" id="bxG-8v-Gu9"/>
+                <constraint firstAttribute="trailing" secondItem="l1w-wj-Lb1" secondAttribute="trailing" id="cYB-1o-GCE"/>
+                <constraint firstAttribute="trailing" secondItem="qZc-Em-e9I" secondAttribute="trailing" id="gWn-iQ-BFM"/>
+                <constraint firstItem="l1w-wj-Lb1" firstAttribute="leading" secondItem="UjY-xz-CyP" secondAttribute="leading" id="ggO-jg-euD"/>
+                <constraint firstItem="l1w-wj-Lb1" firstAttribute="centerX" secondItem="UjY-xz-CyP" secondAttribute="centerX" id="jop-cA-WH6"/>
+                <constraint firstAttribute="trailing" secondItem="rKq-mm-RSf" secondAttribute="trailing" id="kQo-QM-h88"/>
+                <constraint firstItem="JMO-fk-3jW" firstAttribute="leading" secondItem="UjY-xz-CyP" secondAttribute="leading" id="vZK-0g-s6t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="JMO-fk-3jW" id="y6g-GY-HSC"/>
+                <outlet property="pageControl" destination="l1w-wj-Lb1" id="otc-so-SG1"/>
+                <outlet property="pageHeightCons" destination="xEC-IX-mQf" id="d1M-kH-9w3"/>
+                <outlet property="sendBtn" destination="kkt-aq-NCP" id="DGV-gg-3bm"/>
+                <outlet property="seperatorHeightCons" destination="o3l-2d-Qwo" id="OjO-NV-h5d"/>
+                <outlet property="titileViewHeightcons" destination="g40-tM-Aq6" id="iiQ-NZ-2KF"/>
+                <outlet property="titlesView" destination="rKq-mm-RSf" id="PGv-Hr-2yr"/>
+            </connections>
+            <point key="canvasLocation" x="-51" y="621"/>
+        </view>
+    </objects>
+</document>

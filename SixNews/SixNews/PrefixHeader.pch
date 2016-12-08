@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  SixNews
+//
+//  Created by mac on 15/11/30.
+//  Copyright (c) 2015年 张声扬. All rights reserved.
+//
+
+#ifndef SixNews_PrefixHeader_pch
+#define SixNews_PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import "XWCommon.h"
+#import "XWNavController.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "XWCommonHttpTool.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+CH.h"
+#import "UIView+MJ.h"
+#import "XWBaseMethod.h"
+#import "MBProgressHUD.h"
+#import "NSDate+CH.h"
+#import "Reachability.h"
+#import "ASProgressPopUpView.h"
+
+#import "FMDatabase.h"
+#import "FMDatabaseQueue.h"
+//断网的情况下
+#import "XWNetworkLabel.h"
+//数据缓存
+#import "XWDataCacheTool.h"
+
+#endif

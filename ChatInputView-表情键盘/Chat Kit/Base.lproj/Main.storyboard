@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="20150728221214_YN3FR.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Qxq-z0-S5m">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2h-K7-jyr">
+                                <rect key="frame" x="268" y="70" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.99581149401362712" green="1" blue="0.93512198439363203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="显示/隐藏"/>
+                                <connections>
+                                    <action selector="aaa:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9y-gp-SFd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qK9-8W-RIh">
+                                <rect key="frame" x="40" y="130" width="520" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99300452530000005" green="1" blue="0.95536550119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qK9-8W-RIh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2O3-WX-l51"/>
+                            <constraint firstItem="b2h-K7-jyr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ry-nR-lsw"/>
+                            <constraint firstItem="qK9-8W-RIh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="6rK-ZX-ADw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qK9-8W-RIh" secondAttribute="trailing" constant="20" id="9Sn-WX-1F9"/>
+                            <constraint firstItem="qK9-8W-RIh" firstAttribute="top" secondItem="b2h-K7-jyr" secondAttribute="bottom" constant="30" id="MiD-Jn-rLy"/>
+                            <constraint firstItem="Qxq-z0-S5m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NdL-nF-gMH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qxq-z0-S5m" secondAttribute="trailing" constant="-20" id="iCQ-WR-Cpf"/>
+                            <constraint firstItem="b2h-K7-jyr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="pCJ-5I-MTE"/>
+                            <constraint firstItem="Qxq-z0-S5m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="tGd-Mi-sMM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qxq-z0-S5m" secondAttribute="bottom" id="xm4-Yw-34y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lab" destination="qK9-8W-RIh" id="XaC-hz-l38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="452"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="20150728221214_YN3FR.jpeg" width="1200" height="1800"/>
+    </resources>
+</document>

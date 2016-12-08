@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3506aecc-ba6b-434b-ab20-fdbf6529f395++8885",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3506aecc-ba6b-434b-ab20-fdbf6529f395++8885" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3506aecc-ba6b-434b-ab20-fdbf6529f395++8885" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "916A00AE-3C8D-4455-8C60-4030868906DD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3506aecc-ba6b-434b-ab20-fdbf6529f395++8885" : "SixNews%202\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SixNews",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SixNews.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/172.17.23.120\/mycode",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3506aecc-ba6b-434b-ab20-fdbf6529f395++8885"
+    }
+  ]
+}

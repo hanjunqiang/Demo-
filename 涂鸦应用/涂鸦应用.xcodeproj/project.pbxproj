@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E280CBED1BB69FD000F242AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E280CBEC1BB69FD000F242AA /* main.m */; };
+		E280CBF01BB69FD000F242AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E280CBEF1BB69FD000F242AA /* AppDelegate.m */; };
+		E280CBF31BB69FD000F242AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E280CBF21BB69FD000F242AA /* ViewController.m */; };
+		E280CBF61BB69FD000F242AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E280CBF41BB69FD000F242AA /* Main.storyboard */; };
+		E280CBF81BB69FD000F242AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E280CBF71BB69FD000F242AA /* Images.xcassets */; };
+		E280CBFB1BB69FD000F242AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E280CBF91BB69FD000F242AA /* LaunchScreen.xib */; };
+		E280CC071BB69FD000F242AA /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E280CC061BB69FD000F242AA /* ____Tests.m */; };
+		E280CC121BB6A03A00F242AA /* DoodleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E280CC111BB6A03A00F242AA /* DoodleView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E280CC011BB69FD000F242AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E280CBDF1BB69FCF00F242AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E280CBE61BB69FCF00F242AA;
+			remoteInfo = "涂鸦应用";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E280CBE71BB69FCF00F242AA /* 涂鸦应用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "涂鸦应用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E280CBEB1BB69FD000F242AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E280CBEC1BB69FD000F242AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E280CBEE1BB69FD000F242AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E280CBEF1BB69FD000F242AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E280CBF11BB69FD000F242AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E280CBF21BB69FD000F242AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E280CBF51BB69FD000F242AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E280CBF71BB69FD000F242AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E280CBFA1BB69FD000F242AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E280CC001BB69FD000F242AA /* 涂鸦应用Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "涂鸦应用Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E280CC051BB69FD000F242AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E280CC061BB69FD000F242AA /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		E280CC101BB6A03A00F242AA /* DoodleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoodleView.h; path = "涂鸦应用/DoodleView.h"; sourceTree = "<group>"; };
+		E280CC111BB6A03A00F242AA /* DoodleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoodleView.m; path = "涂鸦应用/DoodleView.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E280CBE41BB69FCF00F242AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E280CBFD1BB69FD000F242AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E280CBDE1BB69FCF00F242AA = {
+			isa = PBXGroup;
+			children = (
+				E280CC101BB6A03A00F242AA /* DoodleView.h */,
+				E280CC111BB6A03A00F242AA /* DoodleView.m */,
+				E280CBE91BB69FD000F242AA /* 涂鸦应用 */,
+				E280CC031BB69FD000F242AA /* 涂鸦应用Tests */,
+				E280CBE81BB69FD000F242AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E280CBE81BB69FD000F242AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E280CBE71BB69FCF00F242AA /* 涂鸦应用.app */,
+				E280CC001BB69FD000F242AA /* 涂鸦应用Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E280CBE91BB69FD000F242AA /* 涂鸦应用 */ = {
+			isa = PBXGroup;
+			children = (
+				E280CBEE1BB69FD000F242AA /* AppDelegate.h */,
+				E280CBEF1BB69FD000F242AA /* AppDelegate.m */,
+				E280CBF11BB69FD000F242AA /* ViewController.h */,
+				E280CBF21BB69FD000F242AA /* ViewController.m */,
+				E280CBF41BB69FD000F242AA /* Main.storyboard */,
+				E280CBF71BB69FD000F242AA /* Images.xcassets */,
+				E280CBF91BB69FD000F242AA /* LaunchScreen.xib */,
+				E280CBEA1BB69FD000F242AA /* Supporting Files */,
+			);
+			path = "涂鸦应用";
+			sourceTree = "<group>";
+		};
+		E280CBEA1BB69FD000F242AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E280CBEB1BB69FD000F242AA /* Info.plist */,
+				E280CBEC1BB69FD000F242AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E280CC031BB69FD000F242AA /* 涂鸦应用Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E280CC061BB69FD000F242AA /* ____Tests.m */,
+				E280CC041BB69FD000F242AA /* Supporting Files */,
+			);
+			path = "涂鸦应用Tests";
+			sourceTree = "<group>";
+		};
+		E280CC041BB69FD000F242AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E280CC051BB69FD000F242AA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E280CBE61BB69FCF00F242AA /* 涂鸦应用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E280CC0A1BB69FD000F242AA /* Build configuration list for PBXNativeTarget "涂鸦应用" */;
+			buildPhases = (
+				E280CBE31BB69FCF00F242AA /* Sources */,
+				E280CBE41BB69FCF00F242AA /* Frameworks */,
+				E280CBE51BB69FCF00F242AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "涂鸦应用";
+			productName = "涂鸦应用";
+			productReference = E280CBE71BB69FCF00F242AA /* 涂鸦应用.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E280CBFF1BB69FD000F242AA /* 涂鸦应用Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E280CC0D1BB69FD000F242AA /* Build configuration list for PBXNativeTarget "涂鸦应用Tests" */;
+			buildPhases = (
+				E280CBFC1BB69FD000F242AA /* Sources */,
+				E280CBFD1BB69FD000F242AA /* Frameworks */,
+				E280CBFE1BB69FD000F242AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E280CC021BB69FD000F242AA /* PBXTargetDependency */,
+			);
+			name = "涂鸦应用Tests";
+			productName = "涂鸦应用Tests";
+			productReference = E280CC001BB69FD000F242AA /* 涂鸦应用Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E280CBDF1BB69FCF00F242AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "韩军强";
+				TargetAttributes = {
+					E280CBE61BB69FCF00F242AA = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E280CBFF1BB69FD000F242AA = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = E280CBE61BB69FCF00F242AA;
+					};
+				};
+			};
+			buildConfigurationList = E280CBE21BB69FCF00F242AA /* Build configuration list for PBXProject "涂鸦应用" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E280CBDE1BB69FCF00F242AA;
+			productRefGroup = E280CBE81BB69FD000F242AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E280CBE61BB69FCF00F242AA /* 涂鸦应用 */,
+				E280CBFF1BB69FD000F242AA /* 涂鸦应用Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E280CBE51BB69FCF00F242AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E280CBF61BB69FD000F242AA /* Main.storyboard in Resources */,
+				E280CBFB1BB69FD000F242AA /* LaunchScreen.xib in Resources */,
+				E280CBF81BB69FD000F242AA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E280CBFE1BB69FD000F242AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E280CBE31BB69FCF00F242AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E280CBF31BB69FD000F242AA /* ViewController.m in Sources */,
+				E280CC121BB6A03A00F242AA /* DoodleView.m in Sources */,
+				E280CBF01BB69FD000F242AA /* AppDelegate.m in Sources */,
+				E280CBED1BB69FD000F242AA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E280CBFC1BB69FD000F242AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E280CC071BB69FD000F242AA /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E280CC021BB69FD000F242AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E280CBE61BB69FCF00F242AA /* 涂鸦应用 */;
+			targetProxy = E280CC011BB69FD000F242AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E280CBF41BB69FD000F242AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E280CBF51BB69FD000F242AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E280CBF91BB69FD000F242AA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E280CBFA1BB69FD000F242AA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E280CC081BB69FD000F242AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E280CC091BB69FD000F242AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E280CC0B1BB69FD000F242AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "涂鸦应用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E280CC0C1BB69FD000F242AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "涂鸦应用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E280CC0E1BB69FD000F242AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "涂鸦应用Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/涂鸦应用.app/涂鸦应用";
+			};
+			name = Debug;
+		};
+		E280CC0F1BB69FD000F242AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "涂鸦应用Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/涂鸦应用.app/涂鸦应用";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E280CBE21BB69FCF00F242AA /* Build configuration list for PBXProject "涂鸦应用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E280CC081BB69FD000F242AA /* Debug */,
+				E280CC091BB69FD000F242AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E280CC0A1BB69FD000F242AA /* Build configuration list for PBXNativeTarget "涂鸦应用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E280CC0B1BB69FD000F242AA /* Debug */,
+				E280CC0C1BB69FD000F242AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E280CC0D1BB69FD000F242AA /* Build configuration list for PBXNativeTarget "涂鸦应用Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E280CC0E1BB69FD000F242AA /* Debug */,
+				E280CC0F1BB69FD000F242AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E280CBDF1BB69FCF00F242AA /* Project object */;
+}
